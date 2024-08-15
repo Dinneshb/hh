@@ -1,0 +1,187 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1b1919, #ebe7e7); /* Black gradient background */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Home Page Styling */
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -22px;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+.home-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Slick Slider Styling */
+.slick-slider {
+    position: relative;
+    max-width: 95%;
+    margin: 0 auto;
+    animation: slideIn 1s ease-in-out; /* Apply slide-in animation */
+}
+
+.slide {
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Arrow Styling */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow.next {
+    right: -25px;
+}
+
+.arrow.prev {
+    left: -25px;
+}
+
+/* Slick Slider Arrows and Dots */
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+/* Accordion Styling */
+.accordion-container {
+    margin-top: 100px; /* Add spacing between the slider and the accordion */
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif; /* Align text to the left */
+    animation: fadeIn 1.5s ease-in-out; /* Apply fade-in animation */
+}
+
+.accordion {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.accordion:hover {
+    background: #444;
+}
+
+.accordion.active {
+    background: #444;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background: #222;
+    border-radius: 0 0 5px 5px;
+    margin-top: -10px;
+    color: #bbb; /* Update font color for better readability */
+}
+
+.accordion.active + .accordion-content {
+    display: block;
+}
+
+.marquee-container {
+    margin: 20px 0;
+    margin-top: 10%;
+    background-color: #bbb;
+    height: 25px;
+    animation: fadeIn 2s ease-in-out; /* Apply fade-in animation */
+}
+
+.donor-name {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000000;
+    animation: fadeIn 2.5s ease-in-out; /* Apply fade-in animation */
+}

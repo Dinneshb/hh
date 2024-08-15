@@ -1,0 +1,186 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic Styling */
+.donate-container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    text-align: center; /* Center text horizontally */
+    background: linear-gradient(135deg, #000000, #f1efef);
+    color: #fff; /* White text */
+    animation: fadeIn 1.5s ease-in-out; /* Container fade-in animation */
+    margin-top: -22px;
+}
+
+.donate-container h1 {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-weight: 700; /* Bold font weight */
+    animation: slideInDown 1s ease-in-out; /* Slide-in animation for header */
+}
+
+.donate-container p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px; /* Add some space below the paragraph */
+    font-weight: 400; /* Regular font weight */
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for paragraph */
+}
+
+/* Card Layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.card {
+    background-color: #333; /* Dark background for the card */
+    border: 1px solid #555; /* Darker border */
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Three cards per row with gaps */
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 400px; /* Set a fixed height for the cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between elements inside the card */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    animation: fadeInUp 1s ease-in-out; /* Fade-in animation for cards */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+.card h2 {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+    font-weight: 700; /* Bold font weight */
+}
+
+.card p {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    color: #ccc; /* Light gray text */
+    font-weight: 400; /* Regular font weight */
+}
+
+/* Image Styling */
+.card-image {
+    width: 100%;
+    height: 130%; /* Adjust the height to fit within the card */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between the image and the card content */
+}
+
+/* Button Styling */
+.card-btn {
+    background-color: #7e7e7e; /* Highlight color for buttons */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    border-radius: 10px;
+    padding: 17px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-weight: 700; /* Bold font weight */
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for buttons */
+}
+
+.card-btn:hover {
+    background-color: #96939362; /* Slightly darker button color on hover */
+}
+
+/* Mission Statement Styling */
+.mission-statement {
+    font-family: 'Roboto', serif; /* Use Roboto font */
+    font-style: italic;
+    color: #fff; /* White text */
+    font-weight: 400; /* Regular font weight */
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for mission statement */
+}
+
+/* Ensure all text elements are styled correctly */
+h1, h2, p {
+    font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font */
+    color: #fff; /* White text */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); /* One card per row */
+    }
+
+    .donate-container h1 {
+        font-size: 28px; /* Smaller font size for header */
+    }
+
+    .donate-container p {
+        font-size: 16px; /* Smaller font size for paragraph */
+    }
+
+    .card-btn {
+        font-size: 12px; /* Smaller font size for button text */
+        padding: 15px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .card h2 {
+        font-size: 16px; /* Smaller font size for card title */
+    }
+
+    .card p {
+        font-size: 12px; /* Smaller font size for card text */
+    }
+}

@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #faf8f8;
+    position: relative;
+
+}
+
+.mission-p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to right, #0c0c0c, #faf9f8);
+}
+
+.mission-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.mission-video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.265);
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.video-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.video-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mission-card {
+    background: #2d29296d;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mission-card p {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.join-us-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #a72a28;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.join-us-btn:hover {
+    background-color: #871d1b;
+    width: 100%;
+}
+
+.mission-image {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 70%; /* Adjust the width as needed to make the image smaller */
+    border-radius: 10px;
+}

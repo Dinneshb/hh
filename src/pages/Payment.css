@@ -1,0 +1,140 @@
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-size: cover; /* Make sure the background image covers the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    margin-top: -22px; 
+     /* Prevent the background image from repeating */
+}
+
+.payment-form-container {
+    width: 450px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.121); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add keyframes and media for fade-in animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation to the payment form */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.payment-form h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.payment-form .para {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff84;
+    border: 1px solid #c0b8b8;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.donation-amount .amount-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5em;
+}
+
+.amount-btn {
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.amount-btn:hover {
+    background: #e0e0e0;
+}
+
+.payment-method {
+    margin-bottom: 1em;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payment-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.payment-btn.selected {
+    border-color: #007bff;
+    background-color: #e7f0ff;
+    color: #007bff;
+}
+
+.payment-btn svg {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}

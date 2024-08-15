@@ -1,0 +1,153 @@
+/* Base styles */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #2193b0, #6dd5ed); /* Gradient background */
+    animation: fadeIn 1s ease-in-out; /* Container fade-in animation */
+    margin-top: -22px;
+}
+
+.login-overlay {
+    background-color: rgba(255, 255, 255, 0.281); /* Lighter background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideIn 1s ease-in-out; /* Overlay slide-in animation */
+}
+
+/* Typography */
+body {
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+}
+
+.login-form h1 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Form elements */
+.form-group input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px; /* Space between inputs */
+    animation: inputFadeIn 1.5s ease-in-out; /* Input fade-in animation */
+}
+
+/* Buttons */
+.button {
+    background-color: #8bb8ff; /* Consistent blue */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 15px; /* Space between buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: buttonFadeIn 2s ease-in-out; /* Button fade-in animation */
+}
+
+.button:hover {
+    background-color: #1283f4;
+}
+
+/* Social buttons */
+.google-btn {
+    background-color: #ff6c5f;
+}
+
+.google-btn:hover {
+    background-color: #fa2105;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+}
+
+.facebook-btn:hover {
+    background-color: #3b5998;
+}
+
+.social-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes inputFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .login-overlay {
+        padding: 20px;
+    }
+}
+
+.signup-link{
+    color: rgb(0, 0, 0);
+    
+}
+
+.signup-link:hover {
+    color: #110b36;
+}
